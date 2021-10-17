@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100%;
+    background-image: url("assets/images/bg-tile.gif");
+    background-repeat: repeat;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap');
+
+
+/* Importing Bootstrap SCSS file.  not*/
+
+// @import '~bootstrap/scss/bootstrap';
+

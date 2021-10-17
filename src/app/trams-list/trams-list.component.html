@@ -1,0 +1,42 @@
+<div class="trams-list">
+  <li *ngFor="let item of trams" style="list-style: none;">
+    <div class="trams-card">
+
+      <p class="divided">
+        <span class="trams-time">{{item?.TimeTabledDateTime| date: "dd:MMM:yyyy "}}</span>
+        <span class="divider"></span>
+        <span class="trams-time">{{item?.ExpectedDateTime| date: "dd:MMM:yyyy "}}</span>
+      </p>
+
+      <div class="infowraber">
+        <div class="group-left">
+          <div class="flexContainer">
+            <p class="secondary-text">Current Station:</p>
+            <p class="info-header">{{item?.StopAreaName}}</p>
+          </div>
+          <div class="flexContainer">
+            <p class="secondary-text">Journey Number:</p>
+            <p class="info-header">{{item?.JourneyNumber}}</p>
+          </div>
+        </div>
+        <div class="duration">
+          <p class="secondary-text">Duration</p>
+          <p class="duration-text">{{item?.DisplayTime}} </p>
+        </div>
+        <div class="group-right">
+
+          <div class="flexContainer">
+            <p class="secondary-text">Heading to:</p>
+            <p class="info-header">{{item?.Destination}}</p>
+          </div>
+
+          <div class="flexContainer">
+            <p class="secondary-text">Stop Points:</p>
+            <p class="info-header">{{item?.StopPointDesignation}}</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </li>
+</div>

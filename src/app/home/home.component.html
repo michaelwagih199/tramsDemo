@@ -1,0 +1,44 @@
+<div class="mainDiv">
+
+    <ngx-loading [show]="loading" [config]="{ animationType: ngxLoadingAnimationTypes.chasingDots,
+        backdropBackgroundColour: 'rgba(255,255,255,0.3)', backdropBorderRadius: '10px',
+        primaryColour: '#1E3462', secondaryColour: '#2E55A1', tertiaryColour: '#EEEEF0' }"
+        [template]="customLoadingTemplate"></ngx-loading>
+
+    <p class="header1">Trams Journey</p>
+    <!--start stations div-->
+    <div class="stationInfo">
+        <div class="flexContainer">
+            <p class="secondary-text">Current Station:</p>
+            <p class="info-header">{{tram?.StopAreaName}}</p>
+        </div>
+        <div class="flexContainer">
+            <p class="secondary-text">Heading to:</p>
+            <p class="info-header">{{tram?.Destination}}</p>
+        </div>
+    </div>
+    <!--end station Div-->
+
+    <!--start Info-->
+    <div class="trams-info">
+        <div class="flexContainer">
+            <p class="secondary-text">Date:</p>
+            <p class="info-header">{{dateTime| date: "dd:MMM:yyyy "}}</p>
+        </div>
+        <div class="flexContainer">
+            <p class="secondary-text">Time:</p>
+            <p class="info-header">{{dateTime| date: "hh-mm-ss"}}</p>
+        </div>
+        <div class="flexContainer">
+            <p class="secondary-text">No Of Trams:</p>
+            <p class="info-header">{{trams.length}}</p>
+        </div>
+    </div>
+    <!--end info-->
+    <div class="trams-list">
+        <app-trams-list>
+        </app-trams-list>
+    </div>
+
+
+</div>

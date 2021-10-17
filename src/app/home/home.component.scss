@@ -1,0 +1,73 @@
+$base-color: #EEEEF0;
+$primary-color: #2E55A1;
+$dark-color: #1E3462;
+$secondary-color: #A0B6C4;
+$font-lato: 'Lato';
+
+.mainDiv {
+  height: 95vh;
+  width: 60%;
+  margin: auto;
+  margin-top: 1%;
+  background-color: $base-color;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+  .header1 {
+    background-color: $primary-color;
+    border-radius: 20px 20px 0px 0px;
+    height: 9vh;
+    text-align: center;
+    font-family: $font-lato;
+    font-weight: 400;
+    color: #fff;
+    font-size: 2em;
+  }
+
+  .stationInfo {
+    height: 10vh;
+    background-color: $dark-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .trams-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 6vh;
+    margin-top: 8px;
+    background-color: $primary-color
+  }
+
+  .trams-list {
+    overflow: auto;
+    height: 65vh;
+    margin: 8px;
+  }
+
+}
+
+.secondary-text {
+  font-family: $font-lato;
+  font-weight: 400;
+  font-size: larger;
+  color: $secondary-color;
+}
+
+.info-header {
+  font-family: $font-lato;
+  font-weight: 400;
+  font-size: larger;
+  color: #fff;
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
