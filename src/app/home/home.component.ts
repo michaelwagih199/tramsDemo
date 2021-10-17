@@ -50,7 +50,7 @@ export class HomeComponent implements OnInit {
       this.dateTime = data.ResponseData.LatestUpdate
       //filter data by JourneyDirection = 1 // for heading towards Gullmarsplan 
       var dataFilterd: TramModel[] = data.ResponseData.Trams.filter(function (item) {
-        return item.JourneyDirection == 1;
+        return item.JourneyDirection === 1;
       });
       this.trams = dataFilterd;
       //find one model of trams
